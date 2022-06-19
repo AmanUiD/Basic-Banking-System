@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circularIV"
+            android:layout_width="168dp"
+            android:layout_height="168dp"
+            android:src="@drawable/placeholder"
+            android:layout_marginTop="80dp"
+            app:civ_border_width="5dp"
+            app:civ_border_color="#D8D8D8"
+            android:layout_marginStart="122dp"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aman Sharma"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="28sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/email_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="amandevco@gmail.com"
+android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A/C Balance:"
+                android:textSize="24sp"
+
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/avail_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2578500"
+                android:textSize="24sp"
+                android:layout_marginStart="40dp"
+
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number:"
+                android:textSize="24sp"
+
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/phone_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2578500"
+                android:textSize="24sp"
+                android:layout_marginStart="15dp"
+
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="372dp"
+            android:layout_height="127dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/transactionbtnbg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="A/C Number"
+                        android:textColor="@color/white"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:id="@+id/account_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="25789"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="IFSC Code"
+                        android:textColor="@color/white"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:id="@+id/ifsc_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="73dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="25789"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/transfer_money"
+            android:layout_width="372dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/userbtnbg"
+            android:layout_gravity="center"
+            android:text="Transfer Money"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
